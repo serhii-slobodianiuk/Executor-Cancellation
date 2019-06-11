@@ -22,7 +22,6 @@ public class CopyFilesBuiltInBufferedTask extends AbstractCopyFilesTask {
             readCount++;
 
             iObserver.onProgressUpdated(readCount, totalSize);
-//            System.out.println(String.format("Progress: %d/%d", readCount, totalSize));
         }
         iObserver.onCopyingCompleted(dest);
     }
