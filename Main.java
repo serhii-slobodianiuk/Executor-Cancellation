@@ -69,8 +69,8 @@ public class Main {
             System.out.println("Timer has timed out and cancelled");
         }
 
-        File inputFile = new File(/* pathname */"C:\\Users\\User\\Downloads\\mdf_2019-05-06_16-42-39.pdf");
-        File outFile = new File(/* pathname */"C:\\Users\\User\\Downloads\\copy mdf_2019-05-06_16-42-39.pdf");
+        File inputFile = new File(/* "pathname" */);
+        File outFile = new File(/* "pathname" */);
 
         executor.submit(new CopyFilesBuiltInBufferedTask(inputFile, outFile, new ConsoleLogger()));
         executor.shutdown();
