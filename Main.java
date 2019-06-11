@@ -74,6 +74,5 @@ public class Main {
 
         executor.submit(new CopyFilesBuiltInBufferedTask(inputFile, outFile, new ConsoleLogger()));
         executor.shutdown();
-
     }
 }
