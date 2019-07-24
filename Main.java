@@ -5,7 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
         CountOfFactorial task = new CountOfFactorial();
+        
         ExecutorService executor = Executors.newSingleThreadExecutor();
+        
         final Future<Long> result = executor.submit(task);
         try {
             System.out.println();
